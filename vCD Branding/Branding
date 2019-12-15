@@ -1,0 +1,29 @@
+{
+
+ "portalName": "Cloud Mastery",
+
+ "portalColor": "#588BAE",
+
+ "selectedTheme": {
+
+   "themeType": "BUILT_IN",
+
+   "name": "Default"
+
+ },
+
+ "customLinks": [
+
+   {
+
+     "name": "github",
+
+     "menuItemType": "link",
+
+     "url": "https://github.com/vmkube/SEAKCloudMastery2019"
+
+   }
+
+ ]
+
+}
