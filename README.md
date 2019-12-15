@@ -36,25 +36,25 @@ You will be required to bring your own devices for the hands on labs. Attendees 
 
 19 Dec,2019
 8.30 – 11.30 am
-·         VMware Vision and Strategy
-·         Upgrading to vCloud Director 10
-·         Deep Dive into NSX-T Architecture and Co-existence and Migration from NSX-V
-·         Deep Dive into Object storage with Cloudian
+*         VMware Vision and Strategy
+*         Upgrading to vCloud Director 10
+*         Deep Dive into NSX-T Architecture and Co-existence and Migration from NSX-V
+*         Deep Dive into Object storage with Cloudian
 
 1.00-5.00 pm
-·         Lab Breakout 1 – Object storage with Cloudian
-·         Lab Breakout 2 – vCloud Director with NSX-T
-·         Lab Breakout 3 – Automation with vRO and Terraform
+*         Lab Breakout 1 – Object storage with Cloudian
+*         Lab Breakout 2 – vCloud Director with NSX-T
+*         Lab Breakout 3 – Automation with vRO and Terraform
 
 
 20 Dec,2019
 8.30 – 11.30 am
-·         Using VMware Cloud Provider Platform for Developers
-·         Advanced VMC Discuss and Use Cases
-·         Deep Dive into HCX Enterprise
-·         DRaaS with vCould Availability 3.5
+*         Using VMware Cloud Provider Platform for Developers
+*         Advanced VMC Discuss and Use Cases
+*         Deep Dive into HCX Enterprise
+*         DRaaS with vCould Availability 3.5
 
 1.00-5.00 pm
-·         Lab Breakout 1 – Application Deployment (Container Service Extension and  Bitnami)
-·         Lab Breakout 2 – HCX Enterprise ( Connecting and Configuration of HCX to multiple sites)
-·         Lab Breakout 3 – Advanced vCD (Load Balancing, CPOM and Autoscaling)
+*         Lab Breakout 1 – Application Deployment (Container Service Extension and  Bitnami)
+*         Lab Breakout 2 – HCX Enterprise ( Connecting and Configuration of HCX to multiple sites)
+*         Lab Breakout 3 – Advanced vCD (Branding and Veeam Integration)
