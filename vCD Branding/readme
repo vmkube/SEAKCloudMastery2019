@@ -1,1 +1,88 @@
-test
+Custom Branding on vCD with APIs
+Authentication with  Postman
+
+Let's launch POSTMAN at the desktop first.
+
+Next, let's get the session token for accessing the vCD API. Let's refer to the documentation link below. As we are using vCD 9.7, we will be using vCloud API 32.0
+
+https://docs.vmware.com/en/vCloud-Director/index.html
+
+Let's create a new POST with URL https://vcd-01a.corp.local/api/sessions
+
+In Headers session, Accept header: application/*+;version=32.0
+
+Under Authorization, choose Basic Auth and put in the username and password as shown below
+
+Click Send, and then go to Headers. Your Status should be 200 OK
+
+Take note of the X-VMWARE-VCLOUD-ACCESS-TOKEN, you will need it later
+
+Customize Portal Name and Color
+
+To configure the Portal Name and Color, you will need to make a PUT request to vCloud Director as below; Make sure that the Headers is json and the request is https://FQDN/cloudapi/branding
+
+Go to Authorization TAB , change the type to Bearer Token and copy the Token from earlier to here
+
+Next, go to Body TAB and  you got to input the code, feel free to change the color to anything else you preferred and if you don't like the theme to be Default, you can change it to Dark. Click Send and refresh the browser.
+
+{
+
+ "portalName": "Cloud Mastery",
+
+ "portalColor": "#588BAE",
+
+ "selectedTheme": {
+
+   "themeType": "BUILT_IN",
+
+   "name": "Default"
+
+ }
+
+}
+Customize Links
+
+Now let's try putting links into the portal; Let's check the current portal first. Notice that there is is only User preferences, Change Password, Feedback and Log out
+
+Add the additional code below and append to your above exercise and click Send (look out for the comma)
+
+{
+
+ "portalName": "Cloud Mastery",
+
+ "portalColor": "#588BAE",
+
+ "selectedTheme": {
+
+   "themeType": "BUILT_IN",
+
+   "name": "Default"
+
+ },
+
+ "customLinks": [
+
+   {
+
+     "name": "github",
+
+     "menuItemType": "link",
+
+     "url": "https://github.com/vmkube/SEAKCloudMastery2019"
+
+   }
+
+ ]
+
+}
+
+This will be how it looks like at the end, try clicking the link.
+Customize Logo
+
+To change the Logo, let's do a new PUT request as shown below. This time the content type will be png nd the request is https://FQDN/cloudapi/branding/logo
+Cloudmastery
+
+Go to Body and select binary and then add the png image  from Downloads
+Cloudmastery
+
+Send the Request and refresh the browser. You should be able to see the logo now
