@@ -1,6 +1,6 @@
 # vCD Parameters
 
-vcd_user = "terraform"
+vcd_user = "administrator"
 vcd_pass = "VMware1!"
 vcd_url = "https://vcd-01a.corp.local/api"
 vcd_org = "System"

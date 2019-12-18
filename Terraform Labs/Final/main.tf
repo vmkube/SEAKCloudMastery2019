@@ -92,9 +92,10 @@ resource "vcd_network_routed" "net" {
   depends_on = [vcd_edgegateway.egw]
 }
 
- # Create vApp - Servers
+# Create vApp - Servers
  resource "vcd_vapp" "vapp" {
-   ??
+   
+   #insert code here
  }
 
 
