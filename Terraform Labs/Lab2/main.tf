@@ -61,7 +61,7 @@ resource "vcd_edgegateway" "egw" {
 org = var.org_name
 vdc = var.vdc_name
 
- ??
+#insert code here
 }
 
 
