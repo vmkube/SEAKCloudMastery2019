@@ -57,20 +57,28 @@ resource "vcd_org_vdc" "my-vdc" {
   enable_fast_provisioning = true
   delete_force             = true
   delete_recursive         = true
+  
+  depends_on = [vcd_org.org-name]
 }
 
 # Create Edge GW
 
 resource "vcd_edgegateway" "egw" {
-org = var.org_name
-vdc = var.vdc_name
-
   name                    = "terraform EGW"
   description             = "new edge gateway"
   configuration           = "compact"
-  default_gateway_network = "Site-A-ExtNet"
-  external_networks       = ["Site-A-ExtNet"] 
   advanced                = true
+
+  external_network {
+    name = "Site-A-ExtNet"  
+
+    subnet {
+      gateway = "192.168.100.1"
+      netmask = "255.255.255.0"
+    }
+  }
+
+  depends_on = [vcd_org_vdc.my-vdc]
 }
 
 # Create Org Network

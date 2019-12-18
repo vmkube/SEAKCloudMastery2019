@@ -39,7 +39,7 @@ resource "vcd_org_vdc" "my-vdc" {
     }
   }
 
-  ??
+  #insert code here
 
   metadata = {
     role    = "customerName"
