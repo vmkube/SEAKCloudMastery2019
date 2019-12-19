@@ -119,7 +119,7 @@ resource "vcd_catalog_item" "catalog-item" {
 
   name = "test-item"
   description = "test ova for vApp VM"
-  ova_path = "C:/SEAKCloudMastery2019/Terraform Labs/Bonus/test.ovf"
+  ova_path = "C:/SEAKCloudMastery2019/Terraform Labs/Bonus/test.ovf.ovf"
 
   depends_on = [vcd_catalog.catalog]
 }
