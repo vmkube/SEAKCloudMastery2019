@@ -86,7 +86,7 @@ resource "vcd_edgegateway" "egw" {
 
 # Create Org Network
 resource "vcd_network_routed" "net" {
- org = var.org_name
+  org = var.org_name
   vdc = var.vdc_name
   name         = "terraform-net"
   edge_gateway = "terraform EGW"
