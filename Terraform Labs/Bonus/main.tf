@@ -64,6 +64,8 @@ resource "vcd_org_vdc" "my-vdc" {
 # Create Edge GW
 
 resource "vcd_edgegateway" "egw" {
+  org = var.org_name
+  vdc = var.vdc_name
   name                    = "terraform EGW"
   description             = "new edge gateway"
   configuration           = "compact"
