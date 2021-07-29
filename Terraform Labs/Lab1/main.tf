@@ -4,6 +4,7 @@ provider "vcd" {
   password              = "??"
   org                   = "System"
   url                   = "https://vcd-01a.corp.local/api"
+  version               = "~> 2.5"
 }
 # Create new org
 
