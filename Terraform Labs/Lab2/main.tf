@@ -4,6 +4,7 @@ provider "vcd" {
   password              = var.vcd_pass
   org                   = var.vcd_org
   url                   = var.vcd_url
+  version               = "~> 2.5"
 }
 
 # Create new org
